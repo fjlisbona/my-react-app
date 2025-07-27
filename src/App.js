@@ -230,7 +230,7 @@ function App() {
             <p>Ana M.</p>
           </div>
           <div className="feature-card">
-            <em>"Desde el primer encuentro con Patricia sentí que estaba frente a alguien que realmente escucha. Su presencia es cálida y reconfortante, y su manera de acompañar te hace sentir comprendido y respetado. Cada sesión es como un espacio seguro donde puedo soltar, mirar hacia adentro y reconectar con lo esencial. Gracias a su guía, he empezado a vivir con más conciencia, paz y gratitud. Es un proceso que me está transformando profundamente, y no puedo estar más agradecida."</em>
+            <em>"Desde el primer encuentro con Patricia sentí que estaba frente a alguien que realmente escucha. Su presencia es cálida y reconfortante, y su manera de acompañar te hace sentir comprendida y respetada. Cada sesión es como un espacio seguro donde puedo soltar, mirar hacia adentro y reconectar con lo esencial. Gracias a su guía, he empezado a vivir con más conciencia, paz y gratitud. Es un proceso que me está transformando profundamente, y no puedo estar más agradecida."</em>
             <p>Rosa M.</p>
           </div>
         </div>
