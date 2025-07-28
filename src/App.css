@@ -155,14 +155,15 @@ section {
   position: relative;
 }
 
-.hero-content {
-  max-width: 800px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-top: 100px;
-  text-align: left;
-  align-items: flex-start;
-  margin-left: -550px;
-}
+  .hero-content {
+    max-width: 800px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: -550px;
+    transition: all 0.3s ease;
+  }
 
 .hero h1 {
   font-size: 3.5rem;
@@ -407,7 +408,51 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 1520px) {
+/* iPad Pro (12.9") */
+@media (max-width: 1366px) and (min-width: 1024px) {
+  .hero-content {
+    margin-left: -200px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* iPad (10.2") y iPad Air */
+@media (max-width: 1180px) and (min-width: 768px) {
+  .hero-content {
+    margin-left: -100px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+  }
+}
+
+/* iPad Mini y tablets pequeñas */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero-content {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+    max-width: 85%;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
   section {
     padding: 60px 1rem 1rem;
   }
@@ -430,6 +475,22 @@ section {
     margin-left: 0;
     text-align: center;
     align-items: center;
+    max-width: 90%;
+  }
+  
+  /* Ajustes específicos para tablets en modo landscape */
+  @media (orientation: landscape) and (max-height: 768px) {
+    .hero-content {
+      margin-top: 50px;
+    }
+    
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+    }
   }
 
   .features-grid {
@@ -503,6 +564,66 @@ section {
   .logo-subtitle {
     font-size: 0.8rem;
     margin-left: 0.5rem;
+  }
+}
+
+/* Tablets en modo portrait */
+@media (max-width: 768px) and (min-width: 481px) {
+  .hero-content {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+/* iPad específico */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .hero-content {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+    max-width: 85%;
+    padding: 0 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .hero-content {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+    max-width: 95%;
+    padding: 0 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
   }
 }
 
