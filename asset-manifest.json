@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.784f4ca0.css",
+    "main.css": "/static/css/main.0245fbc3.css",
     "main.js": "/static/js/main.1a249f6a.js",
     "static/js/453.ad6eb26e.chunk.js": "/static/js/453.ad6eb26e.chunk.js",
     "static/media/Video de WhatsApp 2025-07-24 a las 13.16.16_c3a1a7f7.mp4": "/static/media/Video de WhatsApp 2025-07-24 a las 13.16.16_c3a1a7f7.434ed445ce3e33b265c3.mp4",
     "static/media/isotipo-patricia-lisbona.png": "/static/media/isotipo-patricia-lisbona.a55ce16aef86586313e5.png",
     "index.html": "/index.html",
-    "main.784f4ca0.css.map": "/static/css/main.784f4ca0.css.map",
+    "main.0245fbc3.css.map": "/static/css/main.0245fbc3.css.map",
     "main.1a249f6a.js.map": "/static/js/main.1a249f6a.js.map",
     "453.ad6eb26e.chunk.js.map": "/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.784f4ca0.css",
+    "static/css/main.0245fbc3.css",
     "static/js/main.1a249f6a.js"
   ]
 }
