@@ -3,9 +3,11 @@ backend:
   repo: fjlisbona/my-react-app
   branch: gh-pages
   auth_type: pkce
-  app_id: Ov23ligZZJjj2Yt6PkSR
+  app_id: Ov23liGZZJj2Yt6PkSR
 
-media_folder: "/assets/uploads"
+site_url: https://www.patricialisbona.es
+
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
