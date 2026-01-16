@@ -2,7 +2,7 @@ backend:
   name: github
   repo: fjlisbona/my-react-app
   branch: gh-pages
-  base_url: https://auth.patricialisbona.es
+  base_url: https://www.patricialisbona.es
   auth_endpoint: /auth
   auth_type: pkce
   app_id: Ov23ligZZJjj2Yt6PkSR
