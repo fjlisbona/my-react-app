@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <title>Admin</title>
+
     <!-- CLAVE ABSOLUTA -->
-    <base href="/admin/">
+    <script>
+      window.CMS_CONFIGURATION_FILE = "/admin/config.yml";
+    </script>
+
+    
   </head>
   <body>
     <div id="nc-root"></div>
-
-    <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+    <script
+      src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"
+    ></script>
   </body>
 </html>
-
-
