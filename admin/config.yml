@@ -4,7 +4,7 @@ backend:
   branch: gh-pages
   auth_type: pkce
   app_id: Ov23ligZZJjj2Yt6PkSR
-
+  api_root: https://api.github.com
 site_url: https://www.patricialisbona.es
 
 media_folder: "assets/uploads"
