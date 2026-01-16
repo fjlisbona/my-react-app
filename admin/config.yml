@@ -5,7 +5,7 @@ backend:
   auth_type: implicit
   app_id: Ov23ligZZJjj2Yt6PkSR
 
-media_folder: "assets/uploads"
+media_folder: "/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
