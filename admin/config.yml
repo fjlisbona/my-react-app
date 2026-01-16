@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: fjlisbona/my-react-app
+  branch: gh-pages
+  auth_type: implicit
+  app_id: Ov23ligZZJjj2Yt6PkSR
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Publicaciones"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
