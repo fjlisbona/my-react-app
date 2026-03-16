@@ -306,8 +306,7 @@ section {
 
 /* About Section */
 .about {
-  background: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
-              url('./AtWork.jpeg') center / cover no-repeat;
+  background: url('./AtWork.jpeg') center / cover no-repeat;
   margin: 2.5rem 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -315,7 +314,8 @@ section {
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #C98A94;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .about p {
@@ -323,7 +323,8 @@ section {
   margin: 0 auto;
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #000;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.55);
 }
 
 /* Contact Section */
