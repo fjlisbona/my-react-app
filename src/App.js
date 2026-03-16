@@ -173,6 +173,7 @@ function App() {
         <p>
           "El trauma no es lo que te pasa, es lo que sucede dentro de ti como resultado de lo que te pasó". -Gabor Maté
         </p>
+        <img src={require('./AtWork.jpeg')} className="about-img" alt="Patricia Lisbona" />
       </section>
 
       {/* Servicios Section */}
