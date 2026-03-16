@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.47b259cc.css",
-    "main.js": "/static/js/main.73bd9a9e.js",
+    "main.css": "/static/css/main.706f5385.css",
+    "main.js": "/static/js/main.27ec8aa9.js",
     "static/js/453.ad6eb26e.chunk.js": "/static/js/453.ad6eb26e.chunk.js",
     "static/media/Video de WhatsApp 2025-07-24 a las 13.16.16_c3a1a7f7.mp4": "/static/media/Video de WhatsApp 2025-07-24 a las 13.16.16_c3a1a7f7.434ed445ce3e33b265c3.mp4",
     "static/media/isotipo-patricia-lisbona.png": "/static/media/isotipo-patricia-lisbona.a55ce16aef86586313e5.png",
     "index.html": "/index.html",
-    "main.47b259cc.css.map": "/static/css/main.47b259cc.css.map",
-    "main.73bd9a9e.js.map": "/static/js/main.73bd9a9e.js.map",
+    "main.706f5385.css.map": "/static/css/main.706f5385.css.map",
+    "main.27ec8aa9.js.map": "/static/js/main.27ec8aa9.js.map",
     "453.ad6eb26e.chunk.js.map": "/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47b259cc.css",
-    "static/js/main.73bd9a9e.js"
+    "static/css/main.706f5385.css",
+    "static/js/main.27ec8aa9.js"
   ]
 }
