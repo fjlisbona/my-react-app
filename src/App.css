@@ -306,8 +306,8 @@ section {
 
 /* About Section */
 .about {
-  background: rgba(255, 255, 255, 0.9);
-
+  background: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+              url('./AtWork.jpeg') center / cover no-repeat;
   margin: 2.5rem 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
