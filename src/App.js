@@ -147,31 +147,31 @@ function App() {
 
         <h2>Sobre mí</h2>
         <p>
-          Soy Patricia Lisbona, experta en Coaching con Inteligencia Emocional por el Grupo Emociona, spin-off de la Universidad de Granada. También soy experta en Mindfulness en Desarrollo Personal y Educación Consciente por la Universidad de Almería. Además, cuento con el primer nivel de Psych-K (kinesiología psicológica) y me he formado con profesionales de la talla de Joe Dispenza y Sergi Torres.
+          Soy Patricia Lisbona, Experta en Coaching con Inteligencia Emocional por el Grupo Emociona, spin off de la Universidad de Granada. Experta en Mindfulness en Desarrollo Personal y Educación Consciente por la Universidad de Almería. Primer nivel de Psych-K (kinesiología psicológica). Formada por profesionales de la talla de Joe Dispenza y Sergi Torres.
         </p>
         <p>
-          Actualmente me encuentro en el camino hacia la Certificación en Compassionate Inquiry, formación creada por el Dr. Gabor Maté y Sat Dharam Kaur, después de dos años de preparación en este enfoque.
+          Actualmente me encuentro camino a la Certificación en Compassionate Inquiry, formación creada por el Dr. Gabor Maté y Sat Dharam Kaur, después de dos años en esta formación.
         </p>
         <p>
-          Compassionate Inquiry, o Indagación Compasiva, es un enfoque psicoterapéutico creado por el Dr. Gabor Maté a lo largo de varias décadas de trabajo con sus pacientes y participantes en consultas y retiros. Este enfoque descubre y libera, de forma suave, las capas de trauma infantil, constricción y emociones reprimidas que han quedado incrustadas en el cuerpo y que están en la raíz tanto de enfermedades mentales y físicas como de adicciones.
+          Compassionate Inquiry o Indagación Compasiva es un enfoque psicoterapéutico creado por el Dr. Gabor Maté a lo largo de varias décadas de trabajo con sus pacientes y participantes en sus consultas y retiros. Este enfoque suavemente descubre y libera las capas de trauma infantil, constricción y emociones reprimidas que han quedado incrustadas en el cuerpo y que están en la raíz tanto de las enfermedades mentales y físicas como de las adicciones.
         </p>
         <p>
-          Este es el enfoque en el que estoy centrada en mis sesiones, ya que ha supuesto una gran transformación en mi vida.
+          Este es el enfoque en el que estoy centrada en mis sesiones ya que ha supuesto una gran transformación en mi vida.
         </p>
         <p>
-          Mis 30 años como profesora de flauta travesera y mi intención de alcanzar un mayor estado de plenitud, con y sin el instrumento, me han llevado a la observación continua de mis alumnos y de mí misma para conocer qué aspectos emocionales, mentales y corporales impiden que estemos presentes y disfrutemos de cualquier actividad en nuestra vida diaria.
+          Mis 30 años como profesora de Flauta Travesera y mi intención por alcanzar un mayor estado de plenitud con y sin el instrumento, me han llevado a la observación continua de mis alumnos y de mí misma para conocer qué aspectos emocionales, mentales y corporales están impidiendo que estemos presentes y disfrutemos de cualquier actividad que estemos realizando en nuestra vida diaria.
         </p>
         <p>
-          Me encuentro a mí misma en la improvisación, la creatividad, la música, la risa de un niño, la inocencia, el mar y en el rostro de las personas a las que acompaño cuando van descubriendo realmente quiénes son.
+          Me encuentro a mí misma en la improvisación, la creatividad, la música, la risa de un niño, la inocencia, el mar y en el rostro de las personas a las que acompaño cuando van descubriendo realmente quienes son.
         </p>
         <p>
-          Los valores que resuenan en mí son la presencia, la escucha empática, la curiosidad, el respeto por los procesos y ritmos individuales, la confianza en que cada persona tiene sus propias respuestas, la humildad, el no juicio y la compasión.
+          Los valores que resuenan en mí son la presencia, la escucha empática, la curiosidad, respetando los procesos y ritmos individuales, la confianza en que cada persona tiene sus propias respuestas, la humildad, el no juicio y la compasión.
         </p>
         <p>
-          Si quieres que te acompañe en tu proceso para soltar todo aquello que dificulta disfrutar del presente, estaré encantada.
+          Si quieres que te acompañe en tu proceso para soltar todo aquello que está dificultando disfrutar del presente, estaré encantada.
         </p>
         <p>
-          <em>"El trauma no es lo que te pasa, es lo que sucede dentro de ti como resultado de lo que te pasó". - Gabor Maté</em>
+          "El trauma no es lo que te pasa, es lo que sucede dentro de ti como resultado de lo que te pasó". -Gabor Maté
         </p>
       </section>
 
