@@ -1,8 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const testimonials = [
+    {
+      quote:
+        '“Trabajar con Patricia está siendo una experiencia transformadora. Desde el primer momento se nota su interés genuino, su cariño en cada palabra y la atención que pone en cada detalle del proceso. Cada práctica me deja con una sensación de calma, claridad y bienestar. Aunque aún no he terminado el camino, siento que estoy en buenas manos y cada paso me acerca más a una versión de mí más serena, positiva y fortalecida. Estoy deseando ver en quién me voy a convertir gracias a este acompañamiento tan valioso.”',
+      name: 'Clara P.',
+    },
+    {
+      quote:
+        '“El acompañamiento de Patricia ha sido una luz en un momento de mucho ruido interno. Con suavidad y firmeza, me ha ayudado a reconocer mis emociones y a transitar mis procesos con amabilidad. Tiene una sensibilidad especial para saber cuándo sostener, cuándo guiar y cuándo simplemente estar. He aprendido a respirar mejor, a mirar con más compasión y a confiar más en mí. Su presencia ha sido un regalo inesperado que me está ayudando a florecer desde dentro.”',
+      name: 'Ana M.',
+    },
+    {
+      quote:
+        '“Desde el primer encuentro con Patricia sentí que estaba frente a alguien que realmente escucha. Su presencia es cálida y reconfortante, y su manera de acompañar te hace sentir comprendida y respetada. Cada sesión es como un espacio seguro donde puedo soltar, mirar hacia adentro y reconectar con lo esencial. Gracias a su guía, he empezado a vivir con más conciencia, paz y gratitud. Es un proceso que me está transformando profundamente, y no puedo estar más agradecida.”',
+      name: 'Rosa M.',
+    },
+    {
+      quote:
+        '“Desde que inicié las sesiones con Patricia mi vida dio un giro enorme. Me posicioné con más autoridad y confianza en mis acciones. Puedo ahora reconocer mi cuerpo y su lenguaje, lo que me permite no detenerme en situaciones que ya no deseaba transitar. Miro la vida con más entusiasmo y deseo de compartir con otros. El dinero también se presenta más abundante y creé mi marca personal en el trabajo. Muchas gracias Patricia por tu saber y permitirme lograr la vida que quería. ¡Un cariño grande desde Argentina!”',
+      name: 'Valeria.',
+    },
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 7000);
+
+    return () => clearInterval(intervalId);
+  }, [testimonials.length]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -115,13 +147,31 @@ function App() {
 
         <h2>Sobre mí</h2>
         <p>
-          Mi vocación es acompañar a las personas en su camino de transformación interior, desde un lugar de escucha profunda, presencia y respeto. Me especializo en la indagación compasiva, una metodología que permite acceder con suavidad y claridad a las raíces del malestar emocional o existencial, facilitando así una comprensión más amorosa y liberadora de uno mismo.
+          Soy Patricia Lisbona, experta en Coaching con Inteligencia Emocional por el Grupo Emociona, spin-off de la Universidad de Granada. También soy experta en Mindfulness en Desarrollo Personal y Educación Consciente por la Universidad de Almería. Además, cuento con el primer nivel de Psych-K (kinesiología psicológica) y me he formado con profesionales de la talla de Joe Dispenza y Sergi Torres.
         </p>
         <p>
-          Integro herramientas del coaching, la atención plena (mindfulness) y otras prácticas de autoconocimiento, adaptando cada proceso a las necesidades únicas de cada persona. Creo firmemente que cada ser humano posee una sabiduría interior que puede ser redescubierta cuando se le brinda el espacio y la guía adecuados.
+          Actualmente me encuentro en el camino hacia la Certificación en Compassionate Inquiry, formación creada por el Dr. Gabor Maté y Sat Dharam Kaur, después de dos años de preparación en este enfoque.
         </p>
         <p>
-          Mi propósito es ofrecer un acompañamiento cercano, profesional y ético, donde cada persona pueda sentirse segura para explorar su mundo interior, resignificar sus vivencias y avanzar hacia una vida más consciente, auténtica y alineada con sus valores. Si has llegado hasta aquí, quizás sea el momento de comenzar ese viaje hacia ti mismo. Estaré encantada de caminar contigo.
+          Compassionate Inquiry, o Indagación Compasiva, es un enfoque psicoterapéutico creado por el Dr. Gabor Maté a lo largo de varias décadas de trabajo con sus pacientes y participantes en consultas y retiros. Este enfoque descubre y libera, de forma suave, las capas de trauma infantil, constricción y emociones reprimidas que han quedado incrustadas en el cuerpo y que están en la raíz tanto de enfermedades mentales y físicas como de adicciones.
+        </p>
+        <p>
+          Este es el enfoque en el que estoy centrada en mis sesiones, ya que ha supuesto una gran transformación en mi vida.
+        </p>
+        <p>
+          Mis 30 años como profesora de flauta travesera y mi intención de alcanzar un mayor estado de plenitud, con y sin el instrumento, me han llevado a la observación continua de mis alumnos y de mí misma para conocer qué aspectos emocionales, mentales y corporales impiden que estemos presentes y disfrutemos de cualquier actividad en nuestra vida diaria.
+        </p>
+        <p>
+          Me encuentro a mí misma en la improvisación, la creatividad, la música, la risa de un niño, la inocencia, el mar y en el rostro de las personas a las que acompaño cuando van descubriendo realmente quiénes son.
+        </p>
+        <p>
+          Los valores que resuenan en mí son la presencia, la escucha empática, la curiosidad, el respeto por los procesos y ritmos individuales, la confianza en que cada persona tiene sus propias respuestas, la humildad, el no juicio y la compasión.
+        </p>
+        <p>
+          Si quieres que te acompañe en tu proceso para soltar todo aquello que dificulta disfrutar del presente, estaré encantada.
+        </p>
+        <p>
+          <em>"El trauma no es lo que te pasa, es lo que sucede dentro de ti como resultado de lo que te pasó". - Gabor Maté</em>
         </p>
       </section>
 
@@ -218,20 +268,30 @@ function App() {
 
       {/* Testimonios Section */}
       <section id="testimonios" className="features">
-
-        <div className="features-grid">
-          <div className="feature-card">
-
-            <em>"Trabajar con Patricia está siendo una experiencia transformadora. Desde el primer momento se nota su interés genuino, su cariño en cada palabra y la atención que pone en cada detalle del proceso. Cada práctica me deja con una sensación de calma, claridad y bienestar. Aunque aún no he terminado el camino, siento que estoy en buenas manos y cada paso me acerca más a una versión de mí más serena, positiva y fortalecida. Estoy deseando ver en quién me voy a convertir gracias a este acompañamiento tan valioso." </em>
-            <p>Clara P.</p>
+        <div className="testimonials-carousel">
+          <div
+            className="testimonials-track"
+            style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}
+          >
+            {testimonials.map((testimonial, index) => (
+              <div className="testimonial-slide" key={`${testimonial.name}-${index}`}>
+                <div className="feature-card testimonial-card">
+                  <em>{testimonial.quote}</em>
+                  <p>{testimonial.name}</p>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="feature-card">
-            <em>"El acompañamiento de Patricia ha sido una luz en un momento de mucho ruido interno. Con suavidad y firmeza, me ha ayudado a reconocer mis emociones y a transitar mis procesos con amabilidad. Tiene una sensibilidad especial para saber cuándo sostener, cuándo guiar y cuándo simplemente estar. He aprendido a respirar mejor, a mirar con más compasión y a confiar más en mí. Su presencia ha sido un regalo inesperado que me está ayudando a florecer desde dentro."</em>
-            <p>Ana M.</p>
-          </div>
-          <div className="feature-card">
-            <em>"Desde el primer encuentro con Patricia sentí que estaba frente a alguien que realmente escucha. Su presencia es cálida y reconfortante, y su manera de acompañar te hace sentir comprendida y respetada. Cada sesión es como un espacio seguro donde puedo soltar, mirar hacia adentro y reconectar con lo esencial. Gracias a su guía, he empezado a vivir con más conciencia, paz y gratitud. Es un proceso que me está transformando profundamente, y no puedo estar más agradecida."</em>
-            <p>Rosa M.</p>
+
+          <div className="carousel-dots">
+            {testimonials.map((_, index) => (
+              <button
+                key={`dot-${index}`}
+                className={`carousel-dot ${currentTestimonial === index ? 'active' : ''}`}
+                onClick={() => setCurrentTestimonial(index)}
+                aria-label={`Ir al testimonio ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </section>

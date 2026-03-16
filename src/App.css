@@ -123,7 +123,7 @@ html {
 /* Common section styles */
 section {
   min-height: 100vh;
-  padding: 80px 2rem 2rem;
+  padding: 158px 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,15 +155,15 @@ section {
   position: relative;
 }
 
-  .hero-content {
-    max-width: 800px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 100px;
-    text-align: left;
-    align-items: flex-start;
-    margin-left: -550px;
-    transition: all 0.3s ease;
-  }
+.hero-content {
+  max-width: 800px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+  text-align: left;
+  align-items: flex-start;
+  margin-left: -550px;
+  transition: all 0.3s ease;
+}
 
 .hero h1 {
   font-size: 3.5rem;
@@ -221,6 +221,53 @@ section {
   background-color: transparent;
 }
 
+.testimonials-carousel {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.testimonial-slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 800px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(201, 138, 148, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.carousel-dot.active {
+  background-color: #C98A94;
+  transform: scale(1.2);
+}
+
 .feature-card {
   background: white;
   padding: 2rem;
@@ -260,7 +307,7 @@ section {
 /* About Section */
 .about {
   background: rgba(255, 255, 255, 0.9);
-  
+
   margin: 2.5rem 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -424,11 +471,11 @@ section {
     text-align: center;
     align-items: center;
   }
-  
+
   .hero h1 {
     font-size: 3rem;
   }
-  
+
   .hero p {
     font-size: 1.3rem;
   }
@@ -442,11 +489,11 @@ section {
     align-items: center;
     max-width: 85%;
   }
-  
+
   .hero h1 {
     font-size: 2.8rem;
   }
-  
+
   .hero p {
     font-size: 1.2rem;
   }
@@ -477,17 +524,17 @@ section {
     align-items: center;
     max-width: 90%;
   }
-  
+
   /* Ajustes específicos para tablets en modo landscape */
   @media (orientation: landscape) and (max-height: 768px) {
     .hero-content {
       margin-top: 50px;
     }
-    
+
     .hero h1 {
       font-size: 2.2rem;
     }
-    
+
     .hero p {
       font-size: 1.1rem;
     }
@@ -576,21 +623,18 @@ section {
     max-width: 90%;
     padding: 0 1rem;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero p {
     font-size: 1.2rem;
   }
 }
 
 /* iPad específico */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .hero-content {
     margin-left: 0;
     text-align: center;
@@ -598,11 +642,11 @@ section {
     max-width: 85%;
     padding: 0 2rem;
   }
-  
+
   .hero h1 {
     font-size: 3rem;
   }
-  
+
   .hero p {
     font-size: 1.4rem;
   }
@@ -617,11 +661,11 @@ section {
     max-width: 95%;
     padding: 0 1rem;
   }
-  
+
   .hero h1 {
     font-size: 2rem;
   }
-  
+
   .hero p {
     font-size: 1rem;
   }
