@@ -115,13 +115,31 @@ function App() {
 
         <h2>Sobre mí</h2>
         <p>
-          Mi vocación es acompañar a las personas en su camino de transformación interior, desde un lugar de escucha profunda, presencia y respeto. Me especializo en la indagación compasiva, una metodología que permite acceder con suavidad y claridad a las raíces del malestar emocional o existencial, facilitando así una comprensión más amorosa y liberadora de uno mismo.
+          Soy Patricia Lisbona, Experta en Coaching con Inteligencia Emocional por el Grupo Emociona, spin off de la Universidad de Granada. Experta en Mindfulness en Desarrollo Personal y Educación Consciente por la Universidad de Almería. Primer nivel de Psych-K (kinesiología psicológica). Formada por profesionales de la talla de Joe Dispenza y Sergi Torres.
         </p>
         <p>
-          Integro herramientas del coaching, la atención plena (mindfulness) y otras prácticas de autoconocimiento, adaptando cada proceso a las necesidades únicas de cada persona. Creo firmemente que cada ser humano posee una sabiduría interior que puede ser redescubierta cuando se le brinda el espacio y la guía adecuados.
+          Actualmente me encuentro camino a la Certificación en Compassionate Inquiry, formación creada por el Dr. Gabor Maté y Sat Dharam Kaur, después de dos años en esta formación.
         </p>
         <p>
-          Mi propósito es ofrecer un acompañamiento cercano, profesional y ético, donde cada persona pueda sentirse segura para explorar su mundo interior, resignificar sus vivencias y avanzar hacia una vida más consciente, auténtica y alineada con sus valores. Si has llegado hasta aquí, quizás sea el momento de comenzar ese viaje hacia ti mismo. Estaré encantada de caminar contigo.
+          Compassionate Inquiry o Indagación Compasiva es un enfoque psicoterapéutico creado por el Dr. Gabor Maté a lo largo de varias décadas de trabajo con sus pacientes y participantes en sus consultas y retiros. Este enfoque suavemente descubre y libera las capas de trauma infantil, constricción y emociones reprimidas que han quedado incrustadas en el cuerpo y que están en la raíz tanto de las enfermedades mentales y físicas como de las adicciones.
+        </p>
+        <p>
+          Este es el enfoque en el que estoy centrada en mis sesiones ya que ha supuesto una gran transformación en mi vida.
+        </p>
+        <p>
+          Mis 30 años como profesora de Flauta Travesera y mi intención por alcanzar un mayor estado de plenitud con y sin el instrumento, me han llevado a la observación continua de mis alumnos y de mí misma para conocer qué aspectos emocionales, mentales y corporales están impidiendo que estemos presentes y disfrutemos de cualquier actividad que estemos realizando en nuestra vida diaria.
+        </p>
+        <p>
+          Me encuentro a mí misma en la improvisación, la creatividad, la música, la risa de un niño, la inocencia, el mar y en el rostro de las personas a las que acompaño cuando van descubriendo realmente quienes son.
+        </p>
+        <p>
+          Los valores que resuenan en mí son la presencia, la escucha empática, la curiosidad, respetando los procesos y ritmos individuales, la confianza en que cada persona tiene sus propias respuestas, la humildad, el no juicio y la compasión.
+        </p>
+        <p>
+          Si quieres que te acompañe en tu proceso para soltar todo aquello que está dificultando disfrutar del presente, estaré encantada.
+        </p>
+        <p>
+          "El trauma no es lo que te pasa, es lo que sucede dentro de ti como resultado de lo que te pasó". -Gabor Maté
         </p>
       </section>
 
