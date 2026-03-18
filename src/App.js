@@ -40,29 +40,6 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToFeatures = () => {
-    const featuresSection = document.getElementById("features");
-    const startPosition = window.pageYOffset;
-    const targetPosition = featuresSection.offsetTop;
-    const distance = targetPosition - startPosition;
-    const duration = 1500; // 1.5 seconds in milliseconds
-    let start = null;
-
-    function animation(currentTime) {
-      if (start === null) start = currentTime;
-      const timeElapsed = currentTime - start;
-      const progress = Math.min(timeElapsed / duration, 1);
-
-      window.scrollTo(0, startPosition + distance * progress);
-
-      if (timeElapsed < duration) {
-        requestAnimationFrame(animation);
-      }
-    }
-
-    requestAnimationFrame(animation);
-  };
-
   const smoothScroll = (elementId) => {
     const element = document.getElementById(elementId);
     if (!element) return;
