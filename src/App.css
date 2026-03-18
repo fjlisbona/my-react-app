@@ -285,8 +285,10 @@ section {
 }
 
 .feature-card h3 {
-  color: #D8B47A;
-  margin-bottom: 1rem;
+  color: #C98A94;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
   flex-shrink: 0;
   text-align: center;
 }
