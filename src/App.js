@@ -1,6 +1,113 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
+function SectionMark() {
+  return (
+    <svg
+      className="section-mark"
+      width="50"
+      height="50"
+      viewBox="0 0 100 100"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id="section-mark-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#D8B47A" }} />
+          <stop offset="50%" style={{ stopColor: "#D9A48F" }} />
+          <stop offset="100%" style={{ stopColor: "#B97A94" }} />
+        </linearGradient>
+      </defs>
+      <g transform="translate(50,50) scale(2)">
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(0)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(30)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(60)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(90)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(120)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(150)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(180)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(210)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(240)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(270)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(300)"
+        />
+        <path
+          d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
+          fill="none"
+          stroke="url(#section-mark-gradient)"
+          strokeWidth="1.2"
+          transform="rotate(330)"
+        />
+      </g>
+    </svg>
+  );
+}
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -43,8 +150,13 @@ function App() {
   const smoothScroll = (elementId) => {
     const element = document.getElementById(elementId);
     if (!element) return;
+    const nav = document.querySelector(".nav");
+    const navOffset = nav ? nav.offsetHeight + 24 : 24;
     const startPosition = window.pageYOffset;
-    const targetPosition = element.offsetTop;
+    const targetPosition = Math.max(
+      element.getBoundingClientRect().top + window.pageYOffset - navOffset,
+      0
+    );
     const distance = targetPosition - startPosition;
     const duration = 1500;
     let start = null;
@@ -74,15 +186,17 @@ function App() {
         autoPlay
         loop
         muted
+        playsInline
         className="video-fondo"
+        aria-hidden="true"
       />
-      <nav className="nav">
+      <nav className="nav" aria-label="Navegación principal">
         <div className="nav-logo">
           <a href="#inicio" className="logo-text">
             <img
               id="isotipo"
               src={require("./isotipo-patricia-lisbona.png")}
-              alt="Coaching"
+              alt="Isotipo de Patricia Lisbona"
             />
             <div className="logo-text-content">
               <h2 className="logo-title">
@@ -93,7 +207,10 @@ function App() {
           </a>
         </div>
 
-        <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+        <div
+          id="main-navigation"
+          className={`nav-links ${isMenuOpen ? "active" : ""}`}
+        >
           <a
             href="#inicio"
             onClick={(e) => {
@@ -142,31 +259,44 @@ function App() {
           </a>
         </div>
 
-        <button className="hamburger" onClick={toggleMenu}>
+        <button
+          className="hamburger"
+          type="button"
+          onClick={toggleMenu}
+          aria-controls="main-navigation"
+          aria-expanded={isMenuOpen}
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+        >
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
         </button>
       </nav>
 
-      {/* Hero Section */}
-      <section id="inicio" className="hero">
-        <div className="hero-content">
-          <h1 className="logo-subtitle">
-            Coaching con enfoque en Indagación Compasiva y Mindfulness
-          </h1>
-          <button
-            className="cta-button"
-            onClick={() => smoothScroll("acerca-de")}
-          >
-            Descubre cómo puedo ayudarte
-          </button>
-        </div>
-      </section>
+      <main id="contenido-principal">
+        {/* Hero Section */}
+        <section id="inicio" className="hero" aria-labelledby="inicio-title">
+          <div className="hero-content">
+            <h1 id="inicio-title" className="logo-subtitle">
+              Coaching con enfoque en Indagación Compasiva y Mindfulness
+            </h1>
+            <p>
+              Acompañamiento de Patricia Lisbona para procesos de
+              autoconocimiento, presencia, inteligencia emocional y bienestar.
+            </p>
+            <button
+              className="cta-button"
+              type="button"
+              onClick={() => smoothScroll("acerca-de")}
+            >
+              Descubre cómo puedo ayudarte
+            </button>
+          </div>
+        </section>
 
-      {/* About Section */}
-      <section id="acerca-de" className="about">
-        <h2>Sobre mí</h2>
+        {/* About Section */}
+        <section id="acerca-de" className="about" aria-labelledby="acerca-title">
+        <h2 id="acerca-title">Sobre mí</h2>
         <p>
           Soy Patricia Lisbona, Experta en Coaching con Inteligencia Emocional
           por el Grupo Emociona, spin off de la Universidad de Granada. Experta
@@ -221,18 +351,14 @@ function App() {
           "El trauma no es lo que te pasó, sino lo que ocurrió dentro de ti como
           resultado de lo que te pasó". -Gabor Maté
         </p>
-        <img
-          src={require("./AtWork.jpeg")}
-          className="about-img"
-          alt="Patricia Lisbona"
-        />
+        <SectionMark />
       </section>
 
       {/* Servicios Section */}
-      <section id="servicios" className="features">
+      <section id="servicios" className="features" aria-labelledby="servicios-title">
         <div className="features-grid">
           <div className="feature-card">
-            <h3>Sesiones de Coaching basadas en Indagación Compasiva</h3>
+            <h2 id="servicios-title">Sesiones de Coaching basadas en Indagación Compasiva</h2>
             <p>
               Mis sesiones están fundamentadas en la Indagación Compasiva, un
               enfoque creado por el Dr. Gabor Maté que invita a mirar hacia
@@ -261,114 +387,15 @@ function App() {
               esencial emerja a su propio ritmo. Y desde ahí, comienzas a vivir
               con más coherencia, libertad y bienestar.
             </p>
-
-            <svg
-              className="logo-fl isotipo"
-              width="50"
-              height="50"
-              viewBox="0 0 100 100"
-            >
-              <defs>
-                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: "#D8B47A" }} />
-                  <stop offset="50%" style={{ stopColor: "#D9A48F" }} />
-                  <stop offset="100%" style={{ stopColor: "#B97A94" }} />
-                </linearGradient>
-              </defs>
-              <g transform="translate(50,50) scale(2)">
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(0)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(30)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(60)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(90)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(120)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(150)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(180)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(210)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(240)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(270)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(300)"
-                />
-                <path
-                  d="M10,0 C30,10 30,30 10,40 C-10,30 -10,10 10,0 Z"
-                  fill="none"
-                  stroke="url(#grad4)"
-                  strokeWidth="1.2"
-                  transform="rotate(330)"
-                />
-              </g>
-            </svg>
+            <SectionMark />
           </div>
         </div>
       </section>
 
       {/* Testimonios Section */}
-      <section id="testimonios" className="features">
-        <div className="testimonials-carousel">
+      <section id="testimonios" className="features" aria-labelledby="testimonios-title">
+        <h2 id="testimonios-title">Testimonios</h2>
+        <div className="testimonials-carousel" aria-live="polite">
           <div
             className="testimonials-track"
             style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}
@@ -391,19 +418,22 @@ function App() {
               <button
                 key={`dot-${index}`}
                 className={`carousel-dot ${currentTestimonial === index ? "active" : ""}`}
+                type="button"
                 onClick={() => setCurrentTestimonial(index)}
                 aria-label={`Ir al testimonio ${index + 1}`}
+                aria-pressed={currentTestimonial === index}
               />
             ))}
           </div>
         </div>
+        <SectionMark />
       </section>
 
       {/* Contact Section */}
 
-      <section id="contacta" className="contact">
-        <img src={require("./isotipo-patricia-lisbona.png")} alt="Coaching" />
-        <h2>Contacta</h2>
+      <section id="contacta" className="contact" aria-labelledby="contacta-title">
+        <SectionMark />
+        <h2 id="contacta-title">Contacta</h2>
         <p>
           Si tienes alguna pregunta o quieres saber más sobre mis servicios, no
           dudes en contactar conmigo.
@@ -416,6 +446,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            aria-label="Instagram de Patricia Lisbona"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -429,6 +460,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            aria-label="Facebook de Patricia Lisbona"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -442,6 +474,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
+            aria-label="Contactar por WhatsApp"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
@@ -452,6 +485,7 @@ function App() {
           </a>
         </div>
       </section>
+      </main>
 
       <footer className="footer">
         <div className="footer-content">

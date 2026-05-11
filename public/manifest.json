@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Patricia Lisbona",
+  "name": "Patricia Lisbona | Coaching, Indagación Compasiva y Mindfulness",
+  "description": "Sesiones de coaching con enfoque en Indagación Compasiva, mindfulness e inteligencia emocional.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +19,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff"
 }

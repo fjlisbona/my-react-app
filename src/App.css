@@ -17,6 +17,12 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#contenido-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 /* Navigation */
 .nav {
   position: fixed;
@@ -146,7 +152,7 @@ section {
   min-height: 100vh;
   background: transparent;
   color: #D8B47A;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   position: relative;
 }
 
@@ -168,6 +174,8 @@ section {
   margin-bottom: 1rem;
   font-weight: 600;
   color: #D8B47A;
+  text-align: center;
+  width: 100%;
 }
 
 .hero p {
@@ -207,6 +215,10 @@ section {
   border: 1px solid rgba(201, 138, 148, 0.25);
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+#testimonios {
+  margin-bottom: 2rem;
 }
 
 .features h2 {
@@ -288,6 +300,7 @@ section {
   transform: translateY(-5px);
 }
 
+.feature-card h2,
 .feature-card h3 {
   color: #C98A94;
   font-size: 2.5rem;
@@ -315,14 +328,13 @@ section {
   line-height: 1.6;
 }
 
-.feature-card svg {
+.section-mark {
   width: 90px;
   height: 90px;
   object-fit: contain;
-  align-self: center;
+  display: block;
+  margin: 2rem auto 0;
   flex-shrink: 0;
-  margin-top: 1.5rem;
-
 }
 
 /* About Section */
@@ -331,6 +343,7 @@ section {
   background: rgba(255, 255, 255, 0.9);
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
+  scroll-margin-top: 140px;
   border-radius: 16px;
   border: 1px solid rgba(201, 138, 148, 0.25);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -351,22 +364,13 @@ section {
   text-align: left;
 }
 
-.about-img {
-  display: block;
-  margin: 2rem auto 0;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 /* Contact Section */
 .contact {
   width: min(1120px, 94vw);
   background: rgba(255, 255, 255, 0.9);
   padding: 2.5rem 1.5rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
+  min-height: calc(100vh - 140px);
   border-radius: 16px;
   border: 1px solid rgba(201, 138, 148, 0.25);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -383,15 +387,6 @@ section {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: #C98A94;
-}
-
-.contact img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  align-self: center;
-  margin: 0 auto;
-  display: block;
 }
 
 .social-icons {
