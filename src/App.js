@@ -133,6 +133,14 @@ function App() {
         "“Desde que inicié las sesiones con Patricia mi vida dio un giro enorme. Me posicioné con más autoridad y confianza en mis acciones. Puedo ahora reconocer mi cuerpo y su lenguaje, lo que me permite no detenerme en situaciones que ya no deseaba transitar. Miro la vida con más entusiasmo y deseo de compartir con otros. El dinero también se presenta más abundante y creé mi marca personal en el trabajo. Muchas gracias Patricia por tu saber y permitirme lograr la vida que quería. ¡Un cariño grande desde Argentina!”",
       name: "Valeria.",
     },
+    {
+      quote:"Mi terapia con Patricia ha logrado en pocas sesiones lo que no logré en otras terapias en 4 años: no es hablar a lo loco; sino que es una guía para poder aterrizarte a un lugar positivo y constructivo.",
+      name: "Raúl, Ciudad de México"
+    },
+    {
+      quote:"Una experiencia profundamente sanadora. Gracias al acompañamiento de Paty pude trabajar temas que tenía bloqueados por el dolor y hoy los veo desde una perspectiva diferente. Las herramientas que compartió me siguen ayudando en mi día a día, incluso después de las sesiones.",
+      name: "Nayeli, Miami"
+    }
   ];
 
   useEffect(() => {
