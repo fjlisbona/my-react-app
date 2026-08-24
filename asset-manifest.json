@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.08d9e245.css",
-    "main.js": "/static/js/main.a6ff9c0c.js",
+    "main.js": "/static/js/main.c7121504.js",
     "static/js/453.ad6eb26e.chunk.js": "/static/js/453.ad6eb26e.chunk.js",
     "static/media/Video de WhatsApp 2025-07-24 a las 13.16.16_c3a1a7f7.mp4": "/static/media/Video de WhatsApp 2025-07-24 a las 13.16.16_c3a1a7f7.434ed445ce3e33b265c3.mp4",
     "static/media/CIPracticanteCertificado.png": "/static/media/CIPracticanteCertificado.c7e3eff4b47d5bf95aac.png",
     "static/media/isotipo-patricia-lisbona.png": "/static/media/isotipo-patricia-lisbona.a55ce16aef86586313e5.png",
     "index.html": "/index.html",
     "main.08d9e245.css.map": "/static/css/main.08d9e245.css.map",
-    "main.a6ff9c0c.js.map": "/static/js/main.a6ff9c0c.js.map",
+    "main.c7121504.js.map": "/static/js/main.c7121504.js.map",
     "453.ad6eb26e.chunk.js.map": "/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08d9e245.css",
-    "static/js/main.a6ff9c0c.js"
+    "static/js/main.c7121504.js"
   ]
 }
